@@ -1,0 +1,108 @@
+*{
+    box-sizing:border-box;
+}
+html {
+    font-size:16px;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+header {
+    position:fixed;
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+    overflow:auto;
+    justify-content: space-between;
+    align-items:center;
+    background-color:orange;
+}
+
+header h1 {
+    padding-left:1.5rem;
+}
+
+nav {
+    display:flex;
+    justify-content:flex-end;
+    font-size: 1.5rem;
+    padding:.5rem 1rem;
+}
+
+nav a {
+    padding: 0 2rem;
+}
+
+@media only screen and (max-width:768px){
+    nav a {
+        padding: 0 .5rem;
+    }
+}
+
+.jumbotron {
+    display:flex;
+    background-image:url("catan.jpg");
+    align-items: center;
+    justify-content:center;
+    width:100%;
+    height:500px;
+    background-position:center;
+}
+.jumbotron h1 {
+    background-color: #FFF9;
+    padding:.5rem;
+    border-radius: .5rem;
+}
+
+.about {
+    width:70%;
+    margin:2rem auto;
+}
+
+.container {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#events {
+    flex-basis:100%;
+    text-align: center;
+}
+
+.games {
+    display:flex;
+    width:50%;
+    flex-wrap:wrap;
+    align-content:flex-start;
+}
+.games h3 {
+    font-size: 1.8rem;
+    flex-basis:100%;
+    text-align: center;
+}
+
+.games img {
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    overflow:hidden;
+    padding:.5rem;
+}
+
+.games h4 {
+    font-size: 1.5rem;
+    padding: 0 10px;
+}
+
+
+
+.contact {
+    background-color: orange;
+}
+
+@media only screen and (max-width:768px) {
+    .games {
+        width:100%;
+    }
+
+}
